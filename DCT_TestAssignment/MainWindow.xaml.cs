@@ -10,6 +10,7 @@ namespace DCT_TestAssignment
         public MainWindow()
         {
             InitializeComponent();
+            new Controller().Run(usersList);
         }
     }
 }

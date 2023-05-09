@@ -5,5 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DCT_TestAssignment"
         mc:Ignorable="d"
-        Title="DCT_TestAssignment" Height="450" Width="800">
+        Title="Digital Cloud Technologies" Height="450" Width="800">
+    <ListBox x:Name="usersList"></ListBox>
 </Window>
