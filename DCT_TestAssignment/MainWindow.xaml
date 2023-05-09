@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Digital Cloud Technologies" Height="450" Width="400">
+        Title="Digital Cloud Technologies" Height="650" Width="400">
     <DockPanel>
-        <Label Name="label1" DockPanel.Dock="Top" Margin="20,0,0,0">Search by name:</Label>
-        <TextBox DockPanel.Dock="Top" Margin="20,0,200,0" Name="searchFilter" TextChanged="searchFilter_TextChanged" />
+        <StackPanel DockPanel.Dock="Top" Margin="20,10,0,0">
+            <RadioButton Content="Dark Theme" Name="darkRadioButton" Checked="themeRadioButton_Checked"/>
+            <RadioButton Content="Light Theme" Name="lightRadioButton" Checked="themeRadioButton_Checked"/>
+        </StackPanel>
+        <Label Name="searchLabel" DockPanel.Dock="Top" Margin="20,20,0,0">Search by name:</Label>
+        <TextBox DockPanel.Dock="Top" Margin="20,0,20,0" Name="searchFilter" TextChanged="searchFilter_TextChanged" />
         <ListView Margin="20" Name="coinsList" DockPanel.Dock="Left" MouseDoubleClick="coinsList_MouseDoubleClick" >
             <ListView.View>
                 <GridView>

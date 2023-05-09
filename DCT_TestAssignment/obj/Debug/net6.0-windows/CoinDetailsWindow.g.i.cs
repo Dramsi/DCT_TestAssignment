@@ -140,7 +140,7 @@ namespace DCT_TestAssignment {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DCT_TestAssignment;component/coindetailswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DCT_TestAssignment;V1.0.0.0;component/coindetailswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CoinDetailsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
