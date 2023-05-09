@@ -28,20 +28,15 @@ namespace DCT_TestAssignment
             Model model = JsonConvert.DeserializeObject<Model>(File.ReadAllText("coins.json"));
             return model;
         }
-        private void Show10CoinsInTable(Model model, ListView coinsList)
+        private void ShowCoinsInTable(Model model, ListView coinsList)
         {
-            List<Coin> tenCoins = new List<Coin>();
-            List<Coin> allCoins = model.data;
-            for (int i = 0; i < 10; i++)
-            {
-                tenCoins.Add(allCoins[i]);
-            }
-            coinsList.ItemsSource = tenCoins;
+            List<Coin> coins = model.data;
+            coinsList.ItemsSource = coins;
         }
         public void Run(ListView coinsList)
         {
             SetAPICoinsToJSON();
-            Show10CoinsInTable(GetAllCoinsFromJSON(), coinsList);
+            ShowCoinsInTable(GetAllCoinsFromJSON(), coinsList);
         }
     }
 }
