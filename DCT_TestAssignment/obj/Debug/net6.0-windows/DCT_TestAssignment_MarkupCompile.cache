@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\App.xaml
-11407045341
+21957106037
 
-5189950447
+6184044289
 1951704112945
-MainWindow.xaml;
+CoinDetailsWindow.xaml;MainWindow.xaml;
 
 False
 
