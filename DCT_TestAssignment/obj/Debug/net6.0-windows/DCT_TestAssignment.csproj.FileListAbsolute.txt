@@ -8,7 +8,6 @@ Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windo
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\MainWindow.g.cs
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\App.g.cs
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment_MarkupCompile.cache
-Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment_MarkupCompile.lref
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\MainWindow.baml
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment.g.resources
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment.GeneratedMSBuildEditorConfig.editorconfig

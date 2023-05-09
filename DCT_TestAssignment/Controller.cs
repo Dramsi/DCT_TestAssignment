@@ -3,12 +3,14 @@ using System.Net.Http;
 using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Controls;
+using System.Windows;
+using System.Collections.Generic;
 
 namespace DCT_TestAssignment
 {
     public class Controller
     {
-        private async void SetCoinsJSON()
+        private async void SetAPICoinsToJSON()
         {
             HttpClient client = new HttpClient();
             HttpRequestMessage request = new HttpRequestMessage();
@@ -21,27 +23,25 @@ namespace DCT_TestAssignment
             using (StreamWriter sw = new StreamWriter("coins.json", false))
                 sw.WriteLine(data);
         }
-        private Model GetCoins()
+        private Model GetAllCoinsFromJSON()
         {
             Model model = JsonConvert.DeserializeObject<Model>(File.ReadAllText("coins.json"));
             return model;
         }
-        private void ShowData(Model model, ListBox coinsList)
+        private void Show10CoinsInTable(Model model, ListView coinsList)
         {
-            foreach (var coin in model.data)
+            List<Coin> tenCoins = new List<Coin>();
+            List<Coin> allCoins = model.data;
+            for (int i = 0; i < 10; i++)
             {
-                if (Convert.ToInt32(coin.rank) <= 10)
-                    coinsList.Items.Add(coin.name);
+                tenCoins.Add(allCoins[i]);
             }
-            /*for (int i = 1; i <= 10; i++)
-            {
-                coinsList.Items.Add(model.data[i].name);
-            }*/
+            coinsList.ItemsSource = tenCoins;
         }
-        public void Run(ListBox coinsList)
+        public void Run(ListView coinsList)
         {
-            SetCoinsJSON();
-            ShowData(GetCoins(), coinsList);
+            SetAPICoinsToJSON();
+            Show10CoinsInTable(GetAllCoinsFromJSON(), coinsList);
         }
     }
 }

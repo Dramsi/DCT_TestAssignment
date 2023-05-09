@@ -3,8 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DCT_TestAssignment"
         mc:Ignorable="d"
         Title="Digital Cloud Technologies" Height="450" Width="800">
-    <ListBox x:Name="usersList"></ListBox>
+    <Grid>
+        <ListView Margin="20" Name="coinsList">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding name}" />
+                    <GridViewColumn Header="Symbol" Width="50" DisplayMemberBinding="{Binding symbol}" />
+                    <GridViewColumn Header="Supply" Width="150" DisplayMemberBinding="{Binding supply}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
 </Window>
