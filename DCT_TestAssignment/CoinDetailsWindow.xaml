@@ -1,9 +1,29 @@
 ﻿<Window x:Class="DCT_TestAssignment.CoinDetailsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Coin details" Height="200" Width="200">
+        Title="Coin details" Height="650" Width="750">
     <StackPanel>
-        <Label Content="Name:" />
-        <TextBox Name="nameTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Proper name for asset" />
+        <TextBox Margin="20,0,20,0" Name="nameTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Rank is in ascending order - this number is directly associated with the marketcap whereas the highest marketcap receives rank 1" />
+        <TextBox Margin="20,0,20,0" Name="rankTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Most common symbol used to identify this asset on an exchange" />
+        <TextBox Margin="20,0,20,0" Name="symbolTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Available supply for trading" />
+        <TextBox Margin="20,0,20,0" Name="supplyTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Total quantity of asset issued" />
+        <TextBox Margin="20,0,20,0" Name="maxSupplyTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Supply x Price" />
+        <TextBox Margin="20,0,20,0" Name="marketCapUsdTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Quantity of trading volume represented in USD over the last 24 hours" />
+        <TextBox Margin="20,0,20,0" Name="volumeUsd24HrTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Volume-weighted price based on real-time market data, translated to USD" />
+        <TextBox Margin="20,0,20,0" Name="priceUsdTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="The direction and value change in the last 24 hours" />
+        <TextBox Margin="20,0,20,0" Name="changePercent24HrTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Volume Weighted Average Price in the last 24 hours" />
+        <TextBox Margin="20,0,20,0" Name="vwap24HrTextBox" IsReadOnly="True" />
+        <Label Margin="20,10,0,0" Content="Official link of the coin" />
+        <TextBox Margin="20,0,20,0" Name="explorerTextBox" IsReadOnly="True" />
     </StackPanel>
 </Window>
