@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace DCT_TestAssignment
 {
@@ -19,6 +20,18 @@ namespace DCT_TestAssignment
             new Controller().ShowCoins(comboBoxCoin1);
             new Controller().ShowCoins(comboBoxCoin2);
             coins = model.data;
+
+            if (!theme)
+            {
+                this.Background = Brushes.Black;
+                labelCoin1.Foreground = Brushes.White;
+                labelCoin2.Foreground = Brushes.White;
+                labelResult.Foreground = Brushes.White;
+                textBoxCoin1.Foreground = Brushes.White;
+                textBoxCoin1.Background = Brushes.Gray;
+                textBoxResult.Foreground = Brushes.White;
+                textBoxResult.Background = Brushes.Gray;
+            }
         }
 
         private void comboBoxCoin1_SelectionChanged(object sender, SelectionChangedEventArgs e)
