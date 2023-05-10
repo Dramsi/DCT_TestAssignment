@@ -11,7 +11,7 @@ namespace DCT_TestAssignment
         public MainWindow()
         {
             InitializeComponent();
-            new Controller().Run(coinsList);
+            new Controller().ShowCoins(coinsList);
             lightRadioButton.IsChecked = true;
 
             CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(coinsList.ItemsSource);
@@ -42,7 +42,9 @@ namespace DCT_TestAssignment
         }
         private void converterButton_Click(object sender, RoutedEventArgs e)
         {
-
+            bool theme = lightRadioButton.IsChecked == true ? true : false;
+            CoinConverterWindow coinConverterWindow = new CoinConverterWindow(new Controller().GetAllCoinsFromJSON(), theme);
+            coinConverterWindow.ShowDialog();
         }
         private void themeRadioButton_Checked(object sender, RoutedEventArgs e)
         {

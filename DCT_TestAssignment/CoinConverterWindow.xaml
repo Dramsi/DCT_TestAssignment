@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DCT_TestAssignment"
         mc:Ignorable="d"
-        Title="CoinConverterWindow" Height="450" Width="800">
+        Title="CoinConverterWindow" Height="300" Width="300">
     <Grid>
-        
+        <StackPanel>
+            <Label Name="labelCoin1" Margin="10,0,10,0">Choose first coin and write amount:</Label>
+            <ComboBox Name="comboBoxCoin1" Margin="10,0,10,10" SelectionChanged="comboBoxCoin1_SelectionChanged"></ComboBox>
+            <TextBox Name="textBoxCoin1" Margin="10,0,10,10"></TextBox>
+            <Label Name="labelCoin2" Margin="10,0,10,0">Choose second coin:</Label>
+            <ComboBox Name="comboBoxCoin2" Margin="10,0,10,10" SelectionChanged="comboBoxCoin2_SelectionChanged"></ComboBox>
+            <Button Name="convertButton" Margin="10,20,10,10" Click="convertButton_Click">Convert</Button>
+            <Label Name="labelResult" Margin="10,0,10,0">Result:</Label>
+            <TextBox Name="textBoxResult" Margin="10,0,10,10"></TextBox>
+        </StackPanel>
     </Grid>
 </Window>

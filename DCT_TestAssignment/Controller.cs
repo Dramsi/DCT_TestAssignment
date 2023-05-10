@@ -23,20 +23,29 @@ namespace DCT_TestAssignment
             using (StreamWriter sw = new StreamWriter("coins.json", false))
                 sw.WriteLine(data);
         }
-        private Model GetAllCoinsFromJSON()
+        public Model GetAllCoinsFromJSON()
         {
             Model model = JsonConvert.DeserializeObject<Model>(File.ReadAllText("coins.json"));
             return model;
         }
-        private void ShowCoinsInTable(Model model, ListView coinsList)
+        public void ShowCoins(ListView coinsList)
         {
+            SetAPICoinsToJSON();
+            Model model = GetAllCoinsFromJSON();
             List<Coin> coins = model.data;
             coinsList.ItemsSource = coins;
         }
-        public void Run(ListView coinsList)
+        public void ShowCoins(ComboBox coinsBox)
         {
             SetAPICoinsToJSON();
-            ShowCoinsInTable(GetAllCoinsFromJSON(), coinsList);
+            Model model = GetAllCoinsFromJSON();
+            List<Coin> coins = model.data;
+            List<String> coinNames = new List<String>();
+            foreach (Coin coin in coins)
+            {
+                coinNames.Add(coin.name);
+            }
+            coinsBox.ItemsSource = coinNames;
         }
     }
 }
