@@ -40,6 +40,10 @@ namespace DCT_TestAssignment
                 coinDetailsWindow.ShowDialog();
             }
         }
+        private void converterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
         private void themeRadioButton_Checked(object sender, RoutedEventArgs e)
         {
             if (lightRadioButton.IsChecked == true)

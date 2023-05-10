@@ -22,3 +22,6 @@ Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\bin\Debug\net6.0-windo
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment.csproj.CopyComplete
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\CoinDetailsWindow.baml
 Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\CoinDetailsWindow.g.cs
+Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\CoinConverterWindow.g.cs
+Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\DCT_TestAssignment_MarkupCompile.lref
+Z:\Work\My projects\DCT_TestAssignment\DCT_TestAssignment\obj\Debug\net6.0-windows\CoinConverterWindow.baml

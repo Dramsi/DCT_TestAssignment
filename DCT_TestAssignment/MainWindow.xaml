@@ -10,6 +10,7 @@
             <RadioButton Content="Dark Theme" Name="darkRadioButton" Checked="themeRadioButton_Checked"/>
             <RadioButton Content="Light Theme" Name="lightRadioButton" Checked="themeRadioButton_Checked"/>
         </StackPanel>
+        <Button DockPanel.Dock="Bottom" Margin="20,0,20,20" Height="30" Click="converterButton_Click" >Coin converter</Button>
         <Label Name="searchLabel" DockPanel.Dock="Top" Margin="20,20,0,0">Search by name:</Label>
         <TextBox DockPanel.Dock="Top" Margin="20,0,20,0" Name="searchFilter" TextChanged="searchFilter_TextChanged" />
         <ListView Margin="20" Name="coinsList" DockPanel.Dock="Left" MouseDoubleClick="coinsList_MouseDoubleClick" >
