@@ -35,7 +35,8 @@ namespace DCT_TestAssignment
             Coin selectedCoin = coinsList.SelectedItem as Coin;
             if (selectedCoin != null)
             {
-                CoinDetailsWindow coinDetailsWindow = new CoinDetailsWindow(selectedCoin);
+                bool theme = lightRadioButton.IsChecked == true ? true : false;
+                CoinDetailsWindow coinDetailsWindow = new CoinDetailsWindow(selectedCoin, theme);
                 coinDetailsWindow.ShowDialog();
             }
         }

@@ -1,8 +1,8 @@
 ﻿<Window x:Class="DCT_TestAssignment.CoinDetailsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Coin details" Height="650" Width="750">
-    <StackPanel>
+        Title="Coin details" Height="650" Width="750" ResizeMode="NoResize">
+    <StackPanel Name="stackPanel">
         <Label Margin="20,10,0,0" Content="Proper name for asset" />
         <TextBox Margin="20,0,20,0" Name="nameTextBox" IsReadOnly="True" />
         <Label Margin="20,10,0,0" Content="Rank is in ascending order - this number is directly associated with the marketcap whereas the highest marketcap receives rank 1" />

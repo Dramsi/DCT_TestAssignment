@@ -1,11 +1,11 @@
-﻿<Window x:Class="DCT_TestAssignment.MainWindow"
+﻿<Window x:Class="DCT_TestAssignment.MainWindow" 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Digital Cloud Technologies" Height="650" Width="400">
-    <DockPanel>
+        Title="Digital Cloud Technologies" Height="650" Width="400" ResizeMode="NoResize">
+    <DockPanel Name="dockPanel">
         <StackPanel DockPanel.Dock="Top" Margin="20,10,0,0">
             <RadioButton Content="Dark Theme" Name="darkRadioButton" Checked="themeRadioButton_Checked"/>
             <RadioButton Content="Light Theme" Name="lightRadioButton" Checked="themeRadioButton_Checked"/>
