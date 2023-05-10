@@ -6,9 +6,6 @@ using System.Windows.Media;
 
 namespace DCT_TestAssignment
 {
-    /// <summary>
-    /// Interaction logic for CoinConverterWindow.xaml
-    /// </summary>
     public partial class CoinConverterWindow : Window
     {
         string firstCoin = null;
@@ -20,7 +17,6 @@ namespace DCT_TestAssignment
             new Controller().ShowCoins(comboBoxCoin1);
             new Controller().ShowCoins(comboBoxCoin2);
             coins = model.data;
-
             if (!theme)
             {
                 this.Background = Brushes.Black;
@@ -33,17 +29,14 @@ namespace DCT_TestAssignment
                 textBoxResult.Background = Brushes.Gray;
             }
         }
-
         private void comboBoxCoin1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             firstCoin = comboBoxCoin1.SelectedValue.ToString();
         }
-
         private void comboBoxCoin2_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             secondCoin = comboBoxCoin2.SelectedValue.ToString();
         }
-
         private void convertButton_Click(object sender, RoutedEventArgs e)
         {
             try

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
 
@@ -15,21 +14,19 @@ namespace DCT_TestAssignment
             lightRadioButton.IsChecked = true;
 
             CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(coinsList.ItemsSource);
-            view.Filter = UserFilter;
+            view.Filter = CoinFilter;
         }
-        private bool UserFilter(object item)
+        private bool CoinFilter(object item)
         {
             if (String.IsNullOrEmpty(searchFilter.Text))
                 return true;
             else
                 return ((item as Coin).name.IndexOf(searchFilter.Text, StringComparison.OrdinalIgnoreCase) >= 0);
         }
-
         private void searchFilter_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
             CollectionViewSource.GetDefaultView(coinsList.ItemsSource).Refresh();
         }
-
         private void coinsList_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Coin selectedCoin = coinsList.SelectedItem as Coin;

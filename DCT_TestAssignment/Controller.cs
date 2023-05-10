@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.IO;
 using Newtonsoft.Json;
 using System.Windows.Controls;
-using System.Windows;
 using System.Collections.Generic;
 
 namespace DCT_TestAssignment
@@ -25,8 +24,7 @@ namespace DCT_TestAssignment
         }
         public Model GetAllCoinsFromJSON()
         {
-            Model model = JsonConvert.DeserializeObject<Model>(File.ReadAllText("coins.json"));
-            return model;
+            return JsonConvert.DeserializeObject<Model>(File.ReadAllText("coins.json"));
         }
         public void ShowCoins(ListView coinsList)
         {

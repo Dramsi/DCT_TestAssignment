@@ -4,9 +4,6 @@ using System.Windows.Media;
 
 namespace DCT_TestAssignment
 {
-    /// <summary>
-    /// Interaction logic for CoinDetailsWindow.xaml
-    /// </summary>
     public partial class CoinDetailsWindow : Window
     {
         public CoinDetailsWindow(Coin coin, bool theme)
@@ -23,7 +20,6 @@ namespace DCT_TestAssignment
             changePercent24HrTextBox.Text = coin.changePercent24Hr;
             vwap24HrTextBox.Text = coin.vwap24Hr;
             explorerTextBox.Text = coin.explorer;
-
             if (!theme)
             {
                 this.Background = Brushes.Black;
@@ -33,7 +29,6 @@ namespace DCT_TestAssignment
                 Style styleGrey = new Style();
                 styleGrey.Setters.Add(new Setter { Property = Control.BackgroundProperty, Value = new SolidColorBrush(Colors.Gray) });
                 styleGrey.Setters.Add(new Setter { Property = Control.ForegroundProperty, Value = new SolidColorBrush(Colors.White) });
-
                 foreach (FrameworkElement label in stackPanel.Children)
                 {
                     if (label is Label)
